@@ -2,7 +2,7 @@ public class Test{
 
     Test() {}
 
-    public double calculateBMI(final double hight, final double weight) {
+    public double calculateBMI(double hight,double weight) {
 
         double bmi;
         double tmp;
@@ -20,7 +20,7 @@ public class Test{
         return bmi;
     }
 
-    public static void main(final String[] args) {
+    public static void main(String[] args) {
         Test test = new Test();
         System.out.println("BMI on: "+ test.calculateBMI(1.67,39.6));
     }
