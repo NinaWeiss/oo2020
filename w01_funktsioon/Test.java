@@ -10,8 +10,7 @@ public class Test{
         bmi=weight/tmp;
         if (bmi<=18.5){
             System.out.println("Te olete alakaaluline");
-        }
-        else if (bmi>=18.5 && bmi<=24.9){ 
+        }else if (bmi>=18.5 && bmi<=24.9){ 
             System.out.println(" Teil on normaalne kaal");
         }else if(bmi>=25.0 && bmi<=29.9){
             System.out.println("Te olete ülekaaluline"); 
