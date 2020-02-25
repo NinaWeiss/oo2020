@@ -1,0 +1,48 @@
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.ArrayList;
+/**
+ * Maps
+ */
+public class Maps {
+
+    public static void main(String[] args) {
+    
+        
+    //Hashmap,man muss zwei Werte eingeben,einen Key und ein Value
+        HashMap<String, String> animals = new HashMap<String, String>();
+        animals.put("Cat","Mammal");
+        animals.put("Alligator","Reptile");
+        animals.put("Dolphin","Mammal");
+        animals.put("Frog","Amphibian");
+        animals.put("Horse","Mammal");
+        animals.put("Pig","Mammal");
+        System.out.println(animals);
+
+        animals.remove("Pig");
+        //animals.get("Dolphin");
+        System.out.println(animals);
+
+    //Hashset,hier ist nur ein Value nötig
+        HashSet<String> countries = new HashSet<String>();
+        countries.add("Estonia");
+        countries.add("Germany");
+        countries.add("Hungary");
+        countries.add("Thailand");
+        System.out.println(countries);
+        countries.remove("Thailand");
+        System.out.println("Hashset after deleteing:");
+        System.out.println(countries);
+
+    //ArrayList,dynamisch im gegesatz zu einem herkömmlichem Array
+        ArrayList<String> furniture = new ArrayList<String>();
+        furniture.add("Table");
+        furniture.add("Bed");
+        furniture.add("Chair");
+        furniture.add("Couch");
+        furniture.add("Stool");
+        System.out.println(furniture);
+        furniture.set(2,"Table");
+        System.out.println(furniture);
+    }
+}
