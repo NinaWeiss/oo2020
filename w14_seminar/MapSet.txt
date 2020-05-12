@@ -1,0 +1,52 @@
+Set:
+HashSet --> random order
+LinkedHashSet -->sorteerib insertion orderi järgi
+TreeSet -->ASC order
+
+->hoiab üksikud väärtused
+->ei luba dublikaate
+->üks null väärtus lubatud
+->ei saa sorteerida,sortedSet on olemas
+
+Koodinäide:
+
+Set<String> names = new HashSet<>();
+names.add("Tom");
+names.add("Mary");
+
+tähtsad metoodid:
+
+add()
+clear()
+equals()
+isEmpty()
+remove()
+size()
+
+
+Map:
+Hashmap -->random order,null value allowed(key&value)
+LinkedHashMap -->insertion order,null value allowed(key&value)
+HashTabel --> DESC order ,Key&Value not null
+TreeMap --> ASC order, key not null allowed & value null allowed
+
+->hoiab key/values paarid
+->igal key'l on unikaalne väärtus
+- ei saa values'ide järgi sorteerida
+
+Koodinäide:
+
+Map<String,Integer> child = new HashMap<String,Integer>();
+child.put("Hannah",23);
+child.put("Laura",28);
+
+tähtsad metoodid:
+
+put()
+clear()
+containsValue()
+containsKey()
+equals()
+isEmpty()
+remove()
+size()
